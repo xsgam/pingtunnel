@@ -16,22 +16,17 @@ Pingtunnel is a tool that send TCP/UDP traffic over ICMP.
 
 ## Build source code
 
-### get code
+### build on Linux(Ubuntu)
 
 - clone code
-```
+```shell
 git clone https://github.com/xsgam/pingtunnel
-```
-
-- update library
-```
-go get -u github.com/xsgam/pingtunnel
 go get -u github.com/xsgam/pingtunnel/...
 
+or 
 go install github.com/xsgam/pingtunnel@latest
 ```
 
-### build on Linux(Ubuntu)
 ```shell
 # make
 # make -f ./Makefile.cross-build
@@ -39,8 +34,32 @@ go install github.com/xsgam/pingtunnel@latest
 ```
 
 ### build on Windows
+- download  code
+```
+download code from https://github.com/xsgam/pingtunnel
 
-run win_build.bat
+c:\Go\pingtunnel-fast_build> go get
+
+  go: downloading github.com/xsgam/go-engine v0.0.1
+  go: downloading github.com/OneOfOne/xxhash v1.2.8
+  go: downloading github.com/google/uuid v1.3.0
+  go: downloading google.golang.org/protobuf v1.27.1
+  go: downloading github.com/oschwald/geoip2-golang v1.6.1
+  go: downloading github.com/golang/protobuf v1.5.2
+  go: downloading golang.org/x/net v0.0.0-20220127200216-cd36cc0744dd
+  go: downloading github.com/oschwald/maxminddb-golang v1.8.0
+  go: downloading golang.org/x/sys v0.0.0-20211216021012-1d35b9e2eb4e
+```
+
+- build
+```
+c:\Go\pingtunnel-fast_build>go build
+
+or 
+
+c:\Go\pingtunnel-fast_build>win_build.bat
+```
+```
 
 ## Usage
 
