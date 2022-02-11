@@ -1,0 +1,13 @@
+### 1. clone code
+git clone https://github.com/xsgam/pingtunnel
+
+
+### 2. update library
+go get -u github.com/xsgam/pingtunnel
+go get -u github.com/xsgam/pingtunnel/...
+
+go install github.com/xsgam/pingtunnel@latest
+
+### 3. build
+
+run win_build.bat

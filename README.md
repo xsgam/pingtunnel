@@ -14,6 +14,34 @@ Pingtunnel is a tool that send TCP/UDP traffic over ICMP.
 
 ![image](network.jpg)
 
+## Build source code
+
+### get code
+
+- clone code
+```
+git clone https://github.com/xsgam/pingtunnel
+```
+
+- update library
+```
+go get -u github.com/xsgam/pingtunnel
+go get -u github.com/xsgam/pingtunnel/...
+
+go install github.com/xsgam/pingtunnel@latest
+```
+
+### build on Linux(Ubuntu)
+```shell
+# make
+# make -f ./Makefile.cross-build
+# sh release_pkg.sh
+```
+
+### build on Windows
+
+run win_build.bat
+
 ## Usage
 
 ### Install server
